@@ -35,14 +35,14 @@ brew bundle
 echo "Ouverture de Dropbox pour commencer la synchronisation"
 open -a Dropbox
 
-echo "Finalisation de l'installation de The Fuck avec l'alias \"whoops\""
-echo 'eval "$(thefuck --alias whoops)"' >> ~/.zshrc
+#echo "Finalisation de l'installation de The Fuck avec l'alias \"whoops\""
+#echo 'eval "$(thefuck --alias whoops)"' >> ~/.zshrc
 
-echo "Installation des outils de développement Ruby"
+#echo "Installation des outils de développement Ruby"
 # Mise à jour de RubyGems
-sudo gem update --system --silent
+#sudo gem update --system --silent
 # Installation de Bundler
-sudo gem install bundler
+#sudo gem install bundler
 
 echo "Installation des outils de développement Node"
 # Installation de composants Node
@@ -71,7 +71,7 @@ defaults write com.apple.finder ShowStatusBar -bool true
 # Nlsv ▸ List View
 # clmv ▸ Column View
 # icnv ▸ Icon View
-defaults write com.apple.finder FXPreferredViewStyle -string “clmv”
+defaults write com.apple.finder FXPreferredViewStyle -string “icnv”
 
 # Ne pas afficher le chemin d'accès
 defaults write com.apple.finder ShowPathbar -bool false
@@ -181,24 +181,24 @@ sudo defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1
 
 # Safari : menu développeur / URL en bas à gauche / URL complète en haut / Do Not Track / affichage barre favoris
-defaults write com.apple.safari IncludeDevelopMenu -int 1
-defaults write com.apple.safari ShowOverlayStatusBar -int 1
-defaults write com.apple.safari ShowFullURLInSmartSearchField -int 1
-defaults write com.apple.safari SendDoNotTrackHTTPHeader -int 1
-defaults write com.apple.Safari ShowFavoritesBar -bool true
+#defaults write com.apple.safari IncludeDevelopMenu -int 1
+#defaults write com.apple.safari ShowOverlayStatusBar -int 1
+#defaults write com.apple.safari ShowFullURLInSmartSearchField -int 1
+#defaults write com.apple.safari SendDoNotTrackHTTPHeader -int 1
+#defaults write com.apple.Safari ShowFavoritesBar -bool true
 
 # Chrome : désactiver la navigation dans l'historique au swipe
 defaults write com.google.Chrome AppleEnableSwipeNavigateWithScrolls -bool FALSE
 
 # Photos : pas d'affichage pour les iPhone
-defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool YES
+#defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool YES
 
 # TextEdit : .txt par défaut
-defaults write com.apple.TextEdit RichText -int 0
+#defaults write com.apple.TextEdit RichText -int 0
 
 # TextEdit : ouvre et enregistre les fichiers en UTF-8
-defaults write com.apple.TextEdit PlainTextEncoding -int 4
-defaults write com.apple.TextEdit PlainTextEncodingForWrite -int 4
+#defaults write com.apple.TextEdit PlainTextEncoding -int 4
+#defaults write com.apple.TextEdit PlainTextEncodingForWrite -int 4
 
 ## SONS
 
